@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  scroll-behavior: none;
+  height: 100vh;
+}
+
+canvas {
+  height: 100vh;
+}
+
+.App > [class*='leva'] {
+  top: auto;
+  bottom: 10px;
+}
