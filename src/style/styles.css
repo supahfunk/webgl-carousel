@@ -8,13 +8,9 @@ body {
   overflow: hidden;
   scroll-behavior: none;
   height: 100vh;
+  user-select: none;
 }
 
 canvas {
   height: 100vh;
-}
-
-.App > [class*='leva'] {
-  top: auto;
-  bottom: 10px;
 }
