@@ -1,51 +1,51 @@
 const images = [
   {
     image:
-      'img/1.png'
+      'img/1.jpg'
   },
   {
     image:
-      'img/2.png'
+      'img/2.jpg'
   },
   {
     image:
-      'img/3.png'
+      'img/3.jpg'
   },
   {
     image:
-      'img/4.png'
+      'img/4.jpg'
   },
   {
     image:
-      'img/5.png'
+      'img/5.jpg'
   },
   {
     image:
-      'img/6.png'
+      'img/6.jpg'
   },
   {
     image:
-      'img/7.png'
+      'img/7.jpg'
   },
   {
     image:
-      'img/8.png'
+      'img/8.jpg'
   },
   {
     image:
-      'img/9.png'
+      'img/9.jpg'
   },
   {
     image:
-      'img/10.png'
+      'img/10.jpg'
   },
   {
     image:
-      'img/11.png'
+      'img/11.jpg'
   },
   {
     image:
-      'img/12.png'
+      'img/12.jpg'
   }
 ]
 
