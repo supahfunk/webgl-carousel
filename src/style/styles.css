@@ -5,10 +5,10 @@
 }
 
 :root {
-  font-size: 16px;
-  --color-text: #000;
+  font-size: 13px;
+  --color-text: #343131;
   --color-bg: #d5d5d5;
-  --color-link: #000;
+  --color-link: #868282;
   --color-link-hover: #000;
 }
 
@@ -123,6 +123,7 @@ a:focus-visible {
   justify-self: start;
   pointer-events: none;
   align-items: center;
+  text-transform: uppercase;
 }
 
 body #cdawrap {
@@ -177,9 +178,9 @@ canvas {
   .frame {
     position: fixed;
     height: 100vh;
-    grid-template-columns: auto auto auto 1fr;
+    grid-template-columns: auto auto 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: 'title back prev 1fr' '... ... ... sponsor';
+    grid-template-areas: 'title back ...' 'prev ... sponsor';
     align-content: space-between;
     justify-items: start;
     grid-gap: 2rem;
