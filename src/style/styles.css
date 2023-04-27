@@ -116,7 +116,7 @@ a:focus-visible {
   padding: 1.5rem;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: 'title' 'prev' 'sponsor';
+  grid-template-areas: 'title' 'back' 'prev' 'sponsor';
   grid-gap: 0.5rem;
   justify-items: start;
   align-self: start;
@@ -131,15 +131,12 @@ body #cdawrap {
 
 .frame a {
   pointer-events: auto;
-}
-
-.frame a:not(.frame__title-back) {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
 }
 
-.frame a:not(.frame__title-back)::before {
+.frame a::before {
   content: '';
   height: 1px;
   width: 100%;
@@ -150,34 +147,22 @@ body #cdawrap {
   transform-origin: 0% 50%;
 }
 
-.frame a:not(.frame__title-back):hover::before {
+.frame a:hover::before {
   transform: scaleX(0);
   transform-origin: 100% 50%;
 }
 
 .frame__title {
   grid-area: title;
-  display: flex;
-}
-
-.frame__title-main {
   font-size: inherit;
   margin: 0;
   font-weight: inherit;
 }
 
-.frame__title-back {
-  position: relative;
+.frame__back {
+  grid-area: back;
   display: flex;
   align-items: flex-end;
-}
-
-.frame__title-back span {
-  display: none;
-}
-
-.frame__title-back svg {
-  fill: currentColor;
 }
 
 .frame__prev {
@@ -192,9 +177,9 @@ canvas {
   .frame {
     position: fixed;
     height: 100vh;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto auto auto 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: 'title prev ...' '... ... sponsor';
+    grid-template-areas: 'title back prev 1fr' '... ... ... sponsor';
     align-content: space-between;
     justify-items: start;
     grid-gap: 2rem;
